@@ -126,13 +126,13 @@ export default {
 ## avatar
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
-| size | `number` `|` `string` | the size of avatar | 40 | - |
+| size | `number`, `string` | the size of avatar | 40 | - |
 | shape | `string` | the shape of avatar | circle | circle, square |
 
 ## title
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
-| width | `number` `|` `string` | the width of title | 38 | - |
+| width | `number`, `string` | the width of title | 38 | - |
 
 ## paragraph
 
