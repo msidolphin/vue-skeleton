@@ -14,7 +14,7 @@ npm install ve-skeleton -S
 ### Import
 ```js
 import VueSkeleton from 've-skeleton'
-import 've-skeleton/index.css';
+import 've-skeleton/index.css'
 
 Vue.use(VueSkeleton)
 ```
