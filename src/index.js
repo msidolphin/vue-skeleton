@@ -1,4 +1,4 @@
-import packageJson from '../../package.json'
+import packageJson from '../package.json'
 import Skeleton from './packages/skeleton'
 
 Skeleton.install = Vue => {

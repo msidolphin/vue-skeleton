@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import VueSkeleton from '../src'
 // import VueSkeleton from '../lib'
-import '../lib/index.css';
+// import '../lib/index.css'
 
 console.log(VueSkeleton)
 
