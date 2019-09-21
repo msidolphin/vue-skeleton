@@ -1,0 +1,30 @@
+@import './var.less';
+
+.ve-skeleton-animated {
+    background: @bg-active!important;
+    background-size: 400% 100%!important;
+    animation: ve-skeleton-loading 1.4s ease infinite!important;
+    -webkit-animation: ve-skeleton-loading 1.4s ease infinite!important;
+}
+
+@-webkit-keyframes ve-skeleton-loading {
+    0% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@keyframes ve-skeleton-loading {
+    0% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+
