@@ -117,17 +117,17 @@ export default {
 | :------ | :------ | :------ | --- | :---: |
 | loading | `boolean` | display the skeleton when `true` | true | - |
 | animated | `boolean` | animation effect | true | - |
-| avatar | `boolean` `|` `object` | show avatar placeholder | false | - |
-| title | `boolean` `|` `object` | show title placeholder | true | - |
-| paragraph | `boolean` `|` `object` `|` `array` | show paragraph placeholder | true  | - |
-| verical-align | `string` | verical alignment | top | top`|`middle`|`bottom |
-| align | `string` | avatar placement | left | left`|`right` |
+| avatar | `boolean`, `object` | show avatar placeholder | false | - |
+| title | `boolean`, `object` | show title placeholder | true | - |
+| paragraph | `boolean`, `object`, `array` | show paragraph placeholder | true  | - |
+| verical-align | `string` | verical alignment | top | top, middle, bottom |
+| align | `string` | avatar placement | left | left, right |
 
 ## avatar
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
 | size | `number` `|` `string` | the size of avatar | 40 | - |
-| shape | `string` | the shape of avatar | circle | circle`|`square |
+| shape | `string` | the shape of avatar | circle | circle, square |
 
 ## title
 | Attribute | Type | Description | Default | Accepted values |
