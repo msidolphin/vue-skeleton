@@ -26,7 +26,11 @@ Vue.use(VueSkeleton)
     <ve-skeleton avatar/>
     <ve-skeleton/>
     <ve-skeleton avatar vertical-align="middle" :title="{width: 80}" :paragraph="{rows: 4, width: 61}"/>
-    <ve-skeleton :loading="loading" :avatar="{size: 100}" vertical-align="middle" :title="{width: 80}" :paragraph="{rows: 4, width: 61}">
+    <ve-skeleton :loading="loading" 
+      :avatar="{size: 100}"
+      vertical-align="middle"
+      :title="{width: 80}"
+      :paragraph="{rows: 4, width: 61}">
       <div class="demo">
         <div class="demo-left">
           <img src="./avatar.jpg"/>
@@ -46,16 +50,8 @@ Vue.use(VueSkeleton)
 </template>
 
 <script>
-import VeAvatar from '../src/components/avatar'
-import VeTitle from '../src/components/title'
-import VeParagraph from '../src/components/paragraph'
 export default {
   name: 'App',
-  components: {
-    VeAvatar,
-    VeTitle,
-    VeParagraph
-  },
   data () {
     return {
       loading: true
