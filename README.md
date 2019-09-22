@@ -27,7 +27,7 @@ Vue.use(VueSkeleton)
     <ve-skeleton/>
     <!-- with avatar -->
     <ve-skeleton avatar/>
-    <-- complex combination -->
+    <!-- complex combination -->
     <ve-skeleton avatar vertical-align="middle" :title="{width: 80}" :paragraph="{rows: 4, width: 61}"/>
     <!-- with slot -->
     <ve-skeleton :loading="loading" 
