@@ -23,9 +23,13 @@ Vue.use(VueSkeleton)
 ```vue
 <template>
   <div id="app">
-    <ve-skeleton avatar/>
+    <!-- basic -->
     <ve-skeleton/>
+    <!-- with avatar -->
+    <ve-skeleton avatar/>
+    <-- complex combination -->
     <ve-skeleton avatar vertical-align="middle" :title="{width: 80}" :paragraph="{rows: 4, width: 61}"/>
+    <!-- with slot -->
     <ve-skeleton :loading="loading" 
       :avatar="{size: 100}"
       vertical-align="middle"
@@ -122,13 +126,13 @@ export default {
 ## avatar
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
-| size | `number`, `string` | the size of avatar | 40 | - |
+| size | `number`, `string` | the size of avatar, default unit is `px` | 40 | - |
 | shape | `string` | the shape of avatar | circle | circle, square |
 
 ## title
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
-| width | `number`, `string` | the width of title | 38 | - |
+| width | `number`, `string` | the width of title, default unit is `%` | 38 | - |
 
 ## paragraph
 
@@ -137,7 +141,7 @@ export default {
 | Attribute | Type | Description | Default | Accepted values |
 | :------ | :------ | :------ | --- | :---: |
 | rows | `number` | the row count of paragraph  | 3 | - |
-| width | `number` | width of a paragraph. when paragraph is a `Object`, it can only set the last row width  | 61 | -  |
+| width | `number` | width of a paragraph. when paragraph is a `Object`, it can only set the last row width. the default unit is `%`  | 61 | -  |
 
 ## Slots
 | Attribute | Description 

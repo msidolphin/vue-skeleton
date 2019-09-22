@@ -16,8 +16,8 @@ function validType (target, t, name) {
 
 export function containCssUnit (style) {
   if (validType(style, ['String', 'Number'], 'style')) {
-    if (Number.isNaN(style) &&
-            (style.indexOf('px') || style.indexOf('rem') || style.indexOf('em') || style.indexOf('vw') || style.indexOf('vh') || style.indexOf('%'))) {
+    if (typeof style === 'string' &&
+            (style.indexOf('px') !== -1 || style.indexOf('rem') !== -1 || style.indexOf('em') !== -1 || style.indexOf('vw') !== -1 || style.indexOf('vh') !== -1 || style.indexOf('%') !== -1)) {
       return true
     }
     return false

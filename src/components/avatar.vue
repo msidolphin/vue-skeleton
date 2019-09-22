@@ -27,7 +27,6 @@ export default {
       if (!this.options) return {}
       else {
         let opts = Object.assign({}, AVATAR_DEFAULT_OPTIONS, this.options)
-        console.log(opts)
         let size = opts.size ? opts.size : 40
         let wh = containCssUnit(size) ? size : `${size}px`
         return {
